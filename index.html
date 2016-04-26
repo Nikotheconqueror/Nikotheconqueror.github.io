@@ -1,0 +1,101 @@
+<!DOCTYPEhtml>
+    <html>
+        <body background="https://d13yacurqjgara.cloudfront.net/users/41276/screenshots/332290/animated-rainbow.gif">
+            <center>
+            <style>
+
+            a {
+                text-align: center;
+            }
+            
+            p {
+                text-align: center;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            div {
+            background-color: darkslategrey;
+                border: 15px solid;
+                width: 1000px;
+                padding: 50px 20px;
+                border-color: forestgreen;  
+            }
+
+
+	       </style>
+            <div>
+            <p>Insert how many times you would like to say hello world!</p>
+            <p id="typeheer"></p>
+            <form onchange="heelowurld2(words.value, fontz.value)"><input id="words" type="number"></input><br><input id="fontz" type="radio" name="fots" value="1">Chiller
+            <br>
+            <input id="fontz" type="radio" name="fots" value="2">Times
+            <br>
+            <input id="fontz" type="radio" name="fots" value="3">Alienese(wingdings)</form>
+            <br>
+            <button onclick='button()' id="x">Hydra cage,<br></button>
+            <br>
+            <br>
+            <input id="z" type="number">
+                <button onclick="primes(z.value)">IS Prime?</button>
+                <br><a id="primes"></a>
+            <br><input id="w" type="number"><button onclick="primel(w.value)">Prime list</button>
+                <br><a id="primel"></a>
+            <script>
+                function heelowurld2(X, J){
+                    document.getElementById("typeheer").innerHTML="";
+                    if(J==1){
+                        for (var i=0; i<X; i++){
+                            document.getElementById("typeheer").style.fontFamily="Chiller";
+                            document.getElementById("typeheer").innerHTML+="Hello World ";
+                        }   
+                    }else if(J==2){
+                        for (var i=0; i<X; i++){
+                            document.getElementById("typeheer").style.fontFamily="Times New Roman";
+                            document.getElementById("typeheer").innerHTML+="Hello World ";
+                        }
+                    }else if(J==3){
+                        for (var i=0; i<X; i++){
+                            document.getElementById("typeheer").style.fontFamily="Wingdings";
+                            document.getElementById("typeheer").innerHTML+="Hello World ";
+                        }
+                    }
+                }
+                function button(){
+                    document.getElementById("x").innerHTML+="<button onclick='button()'>Hydra button,<br>click one, two appear</button>";
+                    document.getElementById("x").style.backgroundColor='#'+Math.random().toString(16).substr(-6);
+                }
+                function primes(V){
+                    var prime=true
+                     for (var zz=2; zz<V; zz++){
+                         if (V%zz==0){
+                             prime=false
+                         }
+                            }
+                    if (prime==true){
+                             document.getElementById("primes").innerHTML+="This is a prime number<br>";
+                         }else{ if(prime==false){
+                             document.getElementById("primes").innerHTML+="This is not a prime number<br>";
+                         }
+                              }
+                }
+                function weenies(L){
+                                        var prime=true
+                     for (var tt=2; tt<L; tt++){
+                         if (L%==0){
+                             prime=false
+                         }
+                    if (prime==true){
+                             document.getElementById("primes").innerHTML+="This is a prime number<br>";
+                         }else{ if(prime==false){
+                             document.getElementById("primes").innerHTML+="This is not a prime number<br>";
+                         }
+                        }
+                }
+                }
+            </script>
+                </div>
+            </center>
+        </body>
+    </html>
